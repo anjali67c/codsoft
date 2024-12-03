@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="logo.png" alt="image not found" class="logo" height="150px" width="200px">
+            <ul id="sidemenu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contact</a></li>
+                <i class="fa-regular fa-circle-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+
+        <div class="header-text">
+            <p>Front-End Developer</p>
+            <h1>Hi, I'm <span>Anjali</span><br>Prajapati from Bhopal</h1>
+        </div>
+    </div>
+</div>
+<!-- ---------------------about-------------------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="user.jpg!w700wp" alt="image not found">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum at tenetur, earum natus iste eveniet. Ipsum adipisci modi ducimus, dolorem repellat quaerat quia ea repellendus facilis, dolore autem alias pariatur? Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum nam hic saepe expedita dolore. Assumenda ducimus ipsa veniam dignissimos? Aut ratione eaque molestiae quis, dignissimos ipsum explicabo nostrum culpa libero!</p>
+                
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('Education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="Skills">
+                    <ul>
+                        <li><span>Front-End</span><br>Designing Websites</li>
+                        <li><span>Web-development</span><br>Designing Websites</li>
+                        <li><span>Back-End</span><br>Designing Databases</li>
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="Experience">
+                    <ul>
+                        <li><span>2021-Current</span><br>Front-End training from Cybrom</li>
+                        <li><span>2019-2021</span><br>Team Lead at StarApp LLC</li>
+                        <li><span>2016-2017</span><br>Internship at Codsoft</li>
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="Education">
+                    <ul>
+                        <li><span>2016</span><br>Full Stack Training from Cybrom</li>
+                        <li><span>2015</span><br>B.tech in Electronics and Communication From LNCT</li>
+                        <li><span>2019</span><br>MBA from Symbiosis</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+<!-- -------------------services-------------------------->
+ <div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web-development</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam unde facere amet ea aliquid officia. Earum facere adipisci autem velit animi culpa laboriosam non vel officia, quo praesentium commodi ullam!</p>
+                <a href="#">Learn more</a>
+            </div>
+
+            <div>
+                <i class="fa-solid fa-crop-simple"></i>
+                <h2>Front-End development</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam unde facere amet ea aliquid officia. Earum facere adipisci autem velit animi culpa laboriosam non vel officia, quo praesentium commodi ullam!</p>
+                <a href="#">Learn more</a>
+            </div>
+
+            <div>
+                <i class="fa-brands fa-app-store-ios"></i>
+                <h2>Back-End development</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam unde facere amet ea aliquid officia. Earum facere adipisci autem velit animi culpa laboriosam non vel officia, quo praesentium commodi ullam!</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+ </div>
+
+
+ <!-- ---------------------------portfolio------------------------ -->
+
+ <div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="web.jpg" alt="image not found">
+                <div class="layer">
+                    <h3>Social Media Website</h3>
+                    <p>The website connects you to the talented people around the world. Visit our Website</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="front.svg" alt="image not found">
+                <div class="layer">
+                    <h3>Front-End</h3>
+                    <p>The part of the website moes you to the designed part of the website. Visit our Website</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="back.webp" alt="image not found">
+                <div class="layer">
+                    <h3>Back-End</h3>
+                    <p>The [part of the website takes you to the server end of the website. Visit our Website</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <a href="#" class="btn">See More</a>
+    </div>
+ </div>
+
+<!-- --------------------------contact------------------------------>
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-share"></i> anjalichakravarti821@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> 1234567890</p>
+                <div class="social-icons">
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter-square"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="anjali prajapati.docx" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form action="">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email Address" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="copyright">
+        <p>Copyright@anjali. Made by Anjali with <i class="fa-solid fa-heart"></i></p>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+
+<script>
+
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+
+
+</script>
+</body>
+</html>
